@@ -1,0 +1,166 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+list-style: none;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content{
+height: 1000px;
+width: 90%;
+margin: 20px auto;
+display: grid;
+grid-template-columns: 300px 700px;
+margin: auto;
+}
+
+.left-section{
+border: 1px solid black;
+grid-column: span 1;
+background-color: rgb(25, 109, 140);
+color: black;
+padding: 1rem;
+}
+.left-section:hover{
+background-color: rgb(65, 88, 97);
+color: white;
+
+}
+
+.right-section{
+border: 1px solid black;
+grid-column: span 1/ span 2;
+background-color: white;
+color: black;
+}
+
+img{
+border: 5px solid black;
+border-radius: 20%;
+display: block;
+margin: auto;
+}
+
+.left-content{
+padding: 1rem;
+margin: auto;
+}
+
+.name{
+font-size: 1.2rem;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.02px;
+padding: 0.8rem;
+}
+
+.designation{
+text-transform: uppercase;
+text-align: center;
+font-size: 1rem;
+padding-bottom: 0.5rem;
+}
+
+.description{
+font-size: 0.75rem;
+text-align: center;
+padding: 1rem;
+}
+
+.social-media{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal
+-ms-flex-direction: row;
+flex-direction: row;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+list-style: none;
+margin: 0;
+padding: 0;
+height: auto;
+width: auto;
+}
+
+.skills{
+font-size: 0.75rem;
+text-align: center;
+text-transform: uppercase;
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+}
+
+.skill-name{
+font-size: 0.65rem;
+font-weight: 0.65rem;
+text-align: left;
+padding-bottom: 0.5rem;
+}
+
+.Personal-details{
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+list-style: none;
+}
+
+.icon{
+font-size: 1em;
+line-height: 1.2em;
+padding: 10px;
+color: rgb(70, 80, 135);
+margin-right: 10px;
+margin-bottom: 10px !important;
+padding-bottom: 10px !important;
+}
+
+.icon:hover, .icon:focus {
+background: #6d8785;
+}
+
+.progress-bar{
+border: solid 1px white;
+height: 4px;
+color: white;
+}
+
+.right-main-content{
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-left: 3rem;
+padding-right: 3rem;
+}
+
+.right-title{
+text-transform: uppercase;
+font-size: 1.2rem;
+font-weight: 700;
+letter-spacing: 1px;
+padding: 0.5rem;
+}
+
+@media only screen and (max-width: 673px){
+.main-content{
+grid-template-columns: repeat(1,1fr);
+width: 90%;
+min-height: 1000px;
+    }
+}
